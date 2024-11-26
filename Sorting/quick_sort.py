@@ -17,5 +17,4 @@ def quick_sort(seq):
 
 # Testing
 x = [1, 6, 4, 2, 7, 9, 0, 99]
-
 print(quick_sort(x))
