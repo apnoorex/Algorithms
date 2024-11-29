@@ -1,2 +1,2 @@
 # Algorithms
-A collection of most common algorithms implemented in Python
+A collection of most common algorithms implemented in Python.
