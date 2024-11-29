@@ -1,5 +1,9 @@
 def binary_search(sequence, item):
-    """ Binary search algorithm.The sequence has to be sorted first. """
+    """ 
+    Binary search algorithm. Iterative implementation.
+    The sequence has to be sorted first. 
+    Complexity: O(log n)
+    """
     start_index = 0
     end_index = len(sequence) - 1
 

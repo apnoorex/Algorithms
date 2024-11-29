@@ -1,5 +1,9 @@
 def binary_search(sequence, start_index, end_index, item):
-    """ Binary search algorithm.The sequence has to be sorted first. """
+    """ 
+    Binary search algorithm. Recursive implementation.
+    The sequence has to be sorted first. 
+    Complexity: O(log n)
+    """
     if start_index <= end_index:
         midpoint = (start_index + end_index) // 2
 
