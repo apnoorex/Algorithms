@@ -1,4 +1,5 @@
 def merge_sort(seq):
+    """ Merge sort. Complexity: O(n log n). """
     if len(seq) > 1:
 
         left_part = seq[:len(seq)//2]
