@@ -1,4 +1,5 @@
 def quick_sort(seq):
+    """ Quick sort. Complexity: O(n log n). """
     if len(seq) <= 1:
         return seq
 
