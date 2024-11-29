@@ -1,4 +1,5 @@
 def bubble_sort(seq):
+    """ Bubble sort. Complexity: O(n^2). """
     sorted = False
 
     while not sorted:
