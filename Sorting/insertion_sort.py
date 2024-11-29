@@ -1,5 +1,5 @@
 def insertion_sort(seq):
-    """ Insertion sort. Complexity: O(n^2)."""
+    """ Insertion sort. Complexity: O(n^2). """
     for idx in range(1, len(seq)):
         item_to_insert = seq[idx]
 
