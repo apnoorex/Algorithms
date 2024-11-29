@@ -25,6 +25,7 @@ def siftDown(lst, i, end_index):
         else: break
 
 def heap_sort(lst):
+    """ Heap sort. Complexity: O(n log n). """
     for j in range((len(lst) - 2) // 2, -1, -1):
         siftDown(lst, j, len(lst))
 
