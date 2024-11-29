@@ -1,4 +1,5 @@
 def selection_sort(seq):
+    """ Selection sort. Complexity: O(n^2). """
     if len(seq) <= 1:
         return seq
     
