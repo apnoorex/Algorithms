@@ -1,39 +1,39 @@
-def swap(lst, i, j):
-    lst[i], lst[j] = lst[j], lst[i]
+def swap(seq, i, j):
+    seq[i], seq[j] = seq[j], seq[i]
     
-def siftDown(lst, i, end_index):
+def sift_down(seq, i, end_index):
     while True:
         left, right = i * 2 + 1, i * 2 + 2
         if max(left, right) < end_index:
-            if lst[i] >= max(lst[left], lst[right]): break
-            elif lst[left] > lst[right]:
-                swap(lst, i, left)
+            if seq[i] >= max(seq[left], seq[right]): break
+            elif seq[left] > seq[right]:
+                swap(seq, i, left)
                 i = left
             else:
-                swap(lst, i, right)
+                swap(seq, i, right)
                 i = right
         elif left < end_index:
-            if lst[left] > lst[i]:
-                swap(lst, i, left)
+            if seq[left] > seq[i]:
+                swap(seq, i, left)
                 i = left
             else: break
         elif right < end_index:
-            if lst[right] > lst[i]:
-                swap(lst, i, right)
+            if seq[right] > seq[i]:
+                swap(seq, i, right)
                 i = right
             else: break
         else: break
 
-def heap_sort(lst):
+def heap_sort(seq):
     """ Heap sort. Complexity: O(n log n). """
-    for j in range((len(lst) - 2) // 2, -1, -1):
-        siftDown(lst, j, len(lst))
+    for j in range((len(seq) - 2) // 2, -1, -1):
+        sift_down(seq, j, len(seq))
 
-    for end in range(len(lst)-1, 0, -1):
-        swap(lst, 0, end)
-        siftDown(lst, 0, end)
+    for end in range(len(seq)-1, 0, -1):
+        swap(seq, 0, end)
+        sift_down(seq, 0, end)
     
-    return lst
+    return seq
 
 
 # Testing
