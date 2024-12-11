@@ -1,6 +1,6 @@
 def radix_sort(seq):
     """ 
-    Radix sort.
+    Radix sort for positive integers.
 
     Complexity: O(n*d), where:
     n - number of elements
