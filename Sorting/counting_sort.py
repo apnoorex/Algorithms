@@ -1,6 +1,7 @@
 def counting_sort(seq):
     """
     Counting sort for positive integers.
+    
     Complexity: O(n + k), where:
     n - number of elements
     k - range of input sequence
