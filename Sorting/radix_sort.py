@@ -12,7 +12,7 @@ def radix_sort(seq):
         # Create empty buckets
         buckets = [[] for _ in range(10)]
 
-        # Distribute the number to the buckets
+        # Distribute the numbers to the buckets
         for item in seq:
             bucket_idx = item // 10 ** (digit) % 10
             buckets[bucket_idx].append(item)
