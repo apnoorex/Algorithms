@@ -8,6 +8,7 @@ def insertion_sort(seq):
 
     return seq
 
+
 def merge(left, right):
     if len(left) == 0:
         return right
