@@ -3,7 +3,6 @@ import math
 
 def euclidean_distance(p1, p2):
     x1, y1, x2, y2 = *p1, *p2
-
     return math.sqrt((y2 - y1) ** 2 + (x2 - x1) ** 2)
 
 def polar_angle(p1, p2):
@@ -12,7 +11,6 @@ def polar_angle(p1, p2):
     
     dy = p1[1] - p2[1]
     dx = p1[0] - p2[0]
-
     return math.atan2(dy, dx)
 
 def orientation(p1, p2, p3):
