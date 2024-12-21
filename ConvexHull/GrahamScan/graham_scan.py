@@ -24,9 +24,9 @@ def orientation(p1, p2, p3):
 
     Output:
     -------
-    if >0 then counter-clockwise
-    if <0 then clockwise
-    if =0 then collinear
+    if > 0 then counter-clockwise
+    if < 0 then clockwise
+    if = 0 then collinear
     """
     return (p2[0] - p1[0]) * (p3[1] - p1[1]) -(p2[1] - p1[1]) * (p3[0] - p1[0])
 
@@ -43,7 +43,7 @@ def graham_scan(points):
  
     hull = []
     for idx in range(len(points)):
-        while len(hull) >= 2 and orientation(hull[-2], hull[-1], points[idx]) < 1:
+        while len(hull) >= 2 and orientation(hull[-2], hull[-1], points[idx]) <= 0:
             hull.pop()
         hull.append(points[idx])
 
