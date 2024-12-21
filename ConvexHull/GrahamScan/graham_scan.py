@@ -38,7 +38,7 @@ def graham_scan(points):
     """
     # Find the bottom most point
     p0 = min(points, key=lambda p: (p[1], p[0]))
-    # Sort by angle and the distance to the most bottom point
+    # Sort by angle and the distance to the bottom most point
     points.sort(key=lambda p: (polar_angle(p0, p), euclidean_distance(p0, p)))
  
     hull = []
