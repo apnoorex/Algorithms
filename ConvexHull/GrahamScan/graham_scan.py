@@ -1,5 +1,6 @@
 import math
 
+
 def euclidean_distance(p1, p2):
     x1, y1, x2, y2 = *p1, *p2
 
