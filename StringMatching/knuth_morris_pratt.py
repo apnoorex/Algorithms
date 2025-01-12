@@ -55,6 +55,7 @@ def lps_list(pattern, pat_len):
 				
     return lps
 
+
 # Testing
 text = "ababdabbccdabcabdcbba"
 pattern = "abcab"
