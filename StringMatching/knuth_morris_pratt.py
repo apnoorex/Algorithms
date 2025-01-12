@@ -36,7 +36,7 @@ def knuth_morris_pratt(pattern, text):
     return -1
 
 def lps_list(pattern, pat_len):
-    """ Creates the Longest Prefix Suffix list. """
+    """ Creates the Longest Prefix Suffix (LPS) list. """
     lps = [0] * pat_len
     longest = 0 # Longest Prefix-Suffix
 
@@ -49,7 +49,6 @@ def lps_list(pattern, pat_len):
         else:
             if longest != 0:
                 longest = lps[longest-1]
-
             else:
                 lps[idx] = 0
                 idx += 1
